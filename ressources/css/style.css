@@ -1,8 +1,218 @@
-body {
-  background: gainsboro;
+@font-face {
+  font-family: "avenir";
+  src: url("../fonts/avenir/avenir_light-webfont.woff2") format("woff2"), url("../fonts/avenir/avenir_light-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
 }
-body h1 {
-  color: red;
+@font-face {
+  font-family: "avenir";
+  src: url("../fonts/avenir/avenir_book-webfont.woff2") format("woff2"), url("../fonts/avenir/avenir_book-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "avenir";
+  src: url("../fonts/avenir/avenir_regular-webfont.woff2") format("woff2"), url("../fonts/avenir/avenir_regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "avenir";
+  src: url("../fonts/avenir/avenir_heavy-webfont.woff2") format("woff2"), url("../fonts/avenir/avenir_heavy-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "avenir";
+  src: url("../fonts/avenir/avenir_black-webfont.woff2") format("woff2"), url("../fonts/avenir/avenir_black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+body {
+  background: #FFFFFF;
+  font-family: "avenir", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #1A1A1A;
+  font-size: 16px;
+}
+
+.navbar__button, .button__secondary, .button__primary {
+  border-radius: 5px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  border: solid 1px transparent;
+}
+
+.button__primary {
+  background-color: #C39F65;
+  color: #FFFFFF;
+}
+
+.button__secondary {
+  border-color: #1A1A1A;
+  color: #1A1A1A;
+}
+
+.text-link {
+  font-weight: 800;
+  color: #1A1A1A;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  max-width: 1080px;
+  margin: auto;
+  border-bottom: solid 1px #F4F4F4;
+}
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.navbar__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 64px;
+  margin: 0;
+}
+.navbar__link {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar__button {
+  padding: 8px 16px;
+  background-color: #97CB29;
+  color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 80px 32px 30px;
+  max-width: 1080px;
+  margin: auto;
+}
+.header__content {
+  flex: 1;
+  border-bottom: solid 1px #F4F4F4;
+}
+.header__catchphrase {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.header__title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.header__subtitle {
+  display: block;
+  font-weight: 800;
+  font-size: 24px;
+  color: #C39F65;
+  margin-bottom: 16px;
+}
+.header__text {
+  margin-bottom: 48px;
+}
+.header .button__list {
+  margin-bottom: 48px;
+}
+.header__help {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+.header__help-icone {
+  width: 36px;
+}
+.header__illustration {
+  flex: 1;
+  background-image: url("../images/photos/illustration-cook.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  aspect-ratio: 1/1;
+}
+.header__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%) scale(120%);
+}
+.header .quote {
+  position: absolute;
+  bottom: 48px;
+  left: -48px;
+  max-width: 250px;
+}
+
+.quote {
+  background-color: #382213;
+  padding: 32px;
+  border-radius: 5px;
+}
+.quote__icone {
+  width: 19px;
+  margin-bottom: 6px;
+}
+.quote__text {
+  color: #FFFFFF;
+  font-size: 14;
+  font-weight: 800;
+}
+
+.footer {
+  border-top: solid 1px #F4F4F4;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px;
+  margin: auto;
+  padding: 52px 32px 55px;
+}
+.footer__social-medias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  padding: 16px;
+  margin: 0;
+  background: #F4F4F4;
+  min-width: 380px;
+  border-radius: 5px;
+}
+.footer__social-media-item {
+  width: 24px;
+  height: 24px;
+}
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

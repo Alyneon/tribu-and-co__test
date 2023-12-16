@@ -1,7 +1,217 @@
-body {
-    background: gainsboro;
+@import "library/fonts.scss";
+@import "library/variables.scss";
 
-    h1 {
-        color: red;
+body {
+    background: $white;
+    font-family: 'avenir', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    color: $darker;
+    font-size: 16px;
+}
+
+%button {
+    border-radius: 5px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    border: solid 1px transparent;
+}
+
+.button__primary {
+    @extend %button;
+    background-color: $primary;
+    color: $white;
+}
+
+.button__secondary {
+    @extend %button;
+    border-color: $darker;
+    color: $darker;
+}
+
+.text-link {
+    font-weight: 800;
+    color: $darker;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    max-width: 1080px;
+    margin: auto;
+    border-bottom: solid 1px $light-gray;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 64px;
+        margin: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__button {
+        @extend %button;
+        padding: 8px 16px;
+        background-color: $green;
+        color: $white;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 80px 32px 30px;
+    max-width: 1080px;
+    margin: auto;
+
+    &__content {
+        flex: 1;
+        border-bottom: solid 1px $light-gray;
+    }
+
+    &__catchphrase {
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 800;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        display: block;
+        font-weight: 800;
+        font-size: 24px;
+        color: $primary;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        margin-bottom: 48px;
+    }
+
+    .button__list {
+        margin-bottom: 48px;
+    }
+
+    &__help {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 48px;
+    }
+
+    &__help-icone {
+        width: 36px;
+    }
+
+    &__illustration {
+        flex: 1;
+        background-image: url('../images/photos/illustration-cook.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        aspect-ratio: 1 / 1;
+    }
+
+    &__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%) scale(120%);
+    }
+
+    .quote {
+        position: absolute;
+        bottom: 48px;
+        left: -48px;
+        max-width: 250px;
+    }
+}
+
+.quote {
+    background-color: $brown;
+    padding: 32px;
+    border-radius: 5px;
+
+    &__icone {
+        width: 19px;
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        color: $white;
+        font-size: 14;
+        font-weight: 800;
+    }
+}
+
+.footer {
+    border-top: solid 1px $light-gray;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1080px;
+        margin: auto;
+        padding: 52px 32px 55px;
+    }
+
+    &__social-medias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        list-style: none;
+        padding: 16px;
+        margin: 0;
+        background: $light-gray;
+        min-width: 380px;
+        border-radius: 5px;
+    }
+
+    &__social-media-item {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px 16px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
     }
 }

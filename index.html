@@ -3,12 +3,184 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Bagels</title>
         <link rel="stylesheet" href="ressources/css/style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="ressources/script/index.js"></script>
     </head>
     <body>
-        <h1>Contenu</h1>
-        <p>Rigolo</p>
-        <button>Coucou</button>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img src="ressources/images/logo.png" alt="Logo Bagels">
+            </div>
+            <div class="navbar__menu">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Our essentials</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Testimony</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="navbar__burger"></div>
+                <a href="#" class="navbar__button">Order now</a>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="header__content">
+                <p class="header__catchphrase">
+                    In faucibus suspendisse in sagittis pharetra facilisis.
+                </p>
+                <h1 class="header__title">
+                    <small class="header__subtitle">About</small>
+                    Tellus tincidunt gravida tincidunt dui nulla arcu scelerisque sit. Aliquet.
+                </h1>
+                <p class="header__text">
+                    Gravida urna eget magna mauris tristique morbi netus faucibus massa. Curabitur at nibh vel viverra amet lectus habitasse. Sed.
+                </p>
+                <div class="button__list">
+                    <a class="button__primary" href="#">Imperdiet</a>
+                    <a class="button__secondary" href="#">Eget viverra eu</a>
+                </div>
+                <div class="header__help">
+                    <img class="header__help-icone" src="ressources/images/icones/fluent_emoji-hand-20-regular.svg" alt="Icone d'aide">
+                    <p class="header__help-text">
+                        Questions ? <a class="text-link" href="#">Contact us</a>
+                    </p>
+                </div>
+            </div>
+            <div class="header__illustration">
+                <img class="header__image" src="ressources/images/photos/illustration-bagle.png" alt="Photo d'un bagel">
+                <div class="quote">
+                    <img class="quote__icone" src="ressources/images/icones/guillemet.svg" alt="Icone d'un guillemet">
+                    <p class="quote__text">
+                        Sed molestie id blandit tempor. Arcu malesuada vitae aliquam in amet ultrices dui mauris amet.
+                    </p>
+                </div>
+            </div>
+        </header>
+                
+        <main class="main">
+            <section class="section section-our-essentials">
+                <h2 class="section__title">
+                    <small class="section__subtitle">Our essentials</small>
+                    Vitae lorem sagittis habitant tellus. Nunc eu in.
+                </h2>
+                <div class="dishes-card-grid">
+                    <div class="dishes-card">
+                        <img class="dishes-card__image" src="ressources/images/photos/dishes/dish-1.png" alt="Photo du plat">
+                        <h3 class="dishes-card__title">
+                            Tristique sit sit
+                        </h3>
+                        <p class="dishes-card__text">
+                            Nunc ultrices enim justo vitae laoreet rhoncus. Vel.
+                        </p>
+                        <div class="dishes-card__icone-list">
+                            <img class="dishes-card__icone" src="ressources/images/icones/diet-plan/mdi_spicy.svg" alt="Icone plat pimentée">
+                            <img class="dishes-card__icone" src="ressources/images/icones/diet-plan/iconoir_vegan.svg" alt="Icone plat végétarien">
+                            <img class="dishes-card__icone" src="ressources/images/icones/diet-plan/tabler_meat.svg" alt="Icone plat de viande">
+                        </div>
+                    </div>
+                </div>
+                <div class="section-our-essentials__illustration">
+                    <img src="ressources/images/photos/illustration-pepper.png" alt="Photo de piment">
+                </div>
+            </section>
+          
+            <section class="section section-testimony">
+                <div class="section-testimony__content">
+                    <h2 class="section__title">
+                        <small class="section__subtitle">Our essentials</small>
+                        Vitae lorem sagittis habitant tellus. Nunc eu in.
+                    </h2>
+                    <div class="testimonial-card-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__illustration">
+                                <img class="testimonial-card__image" src="ressources/images/photos/testimonials/testimonial-1.png">
+                            </div>
+                            <div class="testimonial-card__content">
+                                <h3 class="testimonial-card__title">
+                                    Donec commodo in vel
+                                </h3>
+                                <p class="testimonial-card__details">
+                                    Eget mattis dictumst habitant posuere
+                                </p>
+                                <p class="testimonial-card__infos">
+                                    In sodales faucibus neque at id mattis accumsan senectus.
+                                </p>
+                                <p class="testimonial-card__text">
+                                    Feugiat maecenas urna auctor morbi massa neque maecenas nunc eu. Pulvinar ut sed amet pellentesque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-testimony__fidelity">
+                    <h2 class="section__title--large">
+                        <small class="section__subtitle">Ipsum viverra sit ut phasellus nulla a. Sed vitae aliquet.</small>
+                        Vitae lorem sagittis habitant tellus. Nunc eu in.
+                    </h2>
+                    <img src="section-testimony__fidelity-image" alt="Photo de la carte de visite">
+                    <a class="button__green" href="#">Get your fidelity card now</a>
+                </div>
+            </section>
+        </main>
+          
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <img src="ressources/images/logo.png" alt="Logo Bagels">
+                </div>
+                <ul class="footer__social-medias">
+                    <li class="footer__social-media-item">
+                        <a href="#" class="footer__social-media-link">
+                            <img class="footer__social-medias-icone" src="ressources/images/icones/social-medias/mdi_instagram.svg">
+                        </a>
+                    </li>
+                    <li class="footer__social-media-item">
+                        <a href="#" class="footer__social-media-link">
+                            <img class="footer__social-medias-icone" src="ressources/images/icones/social-medias/ic_baseline-facebook.svg">
+                        </a>
+                    </li>
+                    <li class="footer__social-media-item">
+                        <a href="#" class="footer__social-media-link">
+                            <img class="footer__social-medias-icone" src="ressources/images/icones/social-medias/pajamas_twitter.svg">
+                        </a>
+                    </li>
+                    <li class="footer__social-media-item">
+                        <a href="#" class="footer__social-media-link">
+                            <img class="footer__social-medias-icone" src="ressources/images/icones/social-medias/mdi_linkedin.svg">
+                        </a>
+                    </li>
+                    <li class="footer__social-media-item">
+                        <a href="#" class="footer__social-media-link">
+                            <img class="footer__social-medias-icone" src="ressources/images/icones/social-medias/simple-icons_ubereats.svg">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__links">
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Legals</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Accessibility</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Site map</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Confidentiality</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>          
+          
     </body>
 </html>
